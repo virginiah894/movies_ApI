@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import './movies.styles.css'
+import classes from './movies.styles.module.css'
 import MovieCard from '../MovieCard/MovieCard'
 import Search from '../Search/Search'
 import axios from 'axios'
@@ -8,12 +8,7 @@ const Movies = () => {
     const [movieData, setMovieData ] = useState([])
     const [searchText, setSearchText] = useState("")
   
-       
-       useEffect(() => {
-
-           data()
-       },[])
-      
+    
     const apiKey = process.env.REACT_APP_MOVIES_API
     const data = async () => {
 
@@ -25,6 +20,12 @@ const Movies = () => {
             console.log(error)
         }
     }
+       useEffect(() => {
+
+           data()
+       },[])
+      
+ 
     
     const SearchData = movieData?.filter((movies) => (movies.title.toLowerCase().includes(searchText.toLowerCase())))
  
@@ -35,7 +36,7 @@ const Movies = () => {
     <div>
 
 <Search handleChange={searchMovies}/>
-          <div className='movie-container'>
+          <div className={classes.movieContainer}>
 
               {
                   SearchData.map((movie) => <MovieCard key={movie.id} data={movie} />)
