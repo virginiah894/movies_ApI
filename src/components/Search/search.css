@@ -1,0 +1,31 @@
+.Search-box {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:3rem auto;
+}
+
+.search{
+
+    margin: 0 auto;
+      outline: none;
+      border: 1px solid grey;
+      padding:1rem 5rem;
+      border-radius: 10px;
+}
+
+.searchButton{
+    margin-left: 1rem;
+outline: none;
+border-radius: 10px;
+padding:.8rem 1.5rem;
+font-size:15px;
+background-color:black;
+color:#fff;
+text-transform:uppercase;
+cursor:pointer;
+ text-align:center;
+
+}
