@@ -1,30 +1,29 @@
 import React, { useEffect,useState } from 'react'
 import classes from './movies.styles.module.css'
-import ShowCard from '../ShowCard/ShowCard'
+import MovieCard from '../MovieCard/MovieCard'
 import Search from '../Search/Search'
 import axios from 'axios'
-const Movie = () => {
+const Movies = () => {
 
     const [movieData, setMovieData ] = useState([])
     const [searchText, setSearchText] = useState("")
   
     
     const apiKey = process.env.REACT_APP_MOVIES_API
-    
-       useEffect(() => {
-           const data = async () => {
+    const data = async () => {
 
-               try {
-                //using axios to fetch data from the api
-                   const response = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`);
-                   console.log(response.data)
-                   setMovieData(response.data.results)
-               } catch (error) {
-                   console.log(error)
-               }
-           }
+        try {
+            const response = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`);
+            console.log(response.data)
+            setMovieData(response.data.results)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+       useEffect(() => {
+
            data()
-       },[apiKey])
+       },[])
       
  
     
@@ -40,7 +39,7 @@ const Movie = () => {
           <div className={classes.movieContainer}>
 
               {
-                  SearchData.map((movie) => <ShowCard key={movie.id} data={movie} />)
+                  SearchData.map((movie) => <MovieCard key={movie.id} data={movie} />)
               }
           </div>
     </div>
@@ -48,4 +47,4 @@ const Movie = () => {
   )
 }
 
-export default Movie
+export default Movies

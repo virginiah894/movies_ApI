@@ -1,0 +1,34 @@
+
+
+
+.showCard{
+ 
+  display:flex;
+  flex-direction:column;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.12);
+  width:250px;
+  gap:1rem;
+   
+    
+}
+.showDetails{
+display:flex;
+flex-direction:column;
+gap:.5rem;
+align-items:flex-start;
+margin:1rem auto
+     
+    
+}
+
+.showOverview{
+    padding:0 auto
+}
+
+.showImage{
+  width:100%;
+  height:300px;
+  
+}

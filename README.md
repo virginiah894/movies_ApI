@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Learning React repository
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains some react projects which were used to build  up on our Knowledge of react from hero to zero. This readme contains links to documentation needed in learning of  the different parts of the react eco system.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Learning React repository](#learning-react-repository)
+  - [Table of contents](#table-of-contents)
+    - [React Basics](#react-basics)
+    - [React Components](#react-components)
+    - [React Hooks](#react-hooks)
+    - [React Router](#react-router)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### React Basics
+ The first thing we learnt is how why react exits , why its better compared to vanilla js and why its so popular. [FreeCodeCamp](https://www.freecodecamp.org/news/why-use-react-for-web-development/)
+             [React](https://reactjs.org/) - JS library
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### React Components
+We then learnt on how to male react components . We learnt about  class components and functional components
+[components](https://reactjs.org/docs/components-and-props.html)
+[components](https://www.simplilearn.com/tutorials/reactjs-tutorial/what-is-reactjs)
+[class components](https://www.geeksforgeeks.org/reactjs-class-based-components/)
+[functional components](https://www.freecodecamp.org/news/react-components-jsx-props-for-beginners/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### React Hooks
+Learn how to use some basic react hooks like useState to manage our state in functional components and useEffect to manage side effects in our react application
+[hooks](https://www.freecodecamp.org/news/introduction-to-react-hooks/)
+[hooks](https://reactjs.org/docs/hooks-overview.html)
+[hooks](https://usehooks.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### React Router
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I was able to understand how to user react-router-dom-v6 to add routing to our application.
+ I was able to persist the Navigation on all the pages using an <Outlet/>
+ Able to get the route path using useLocation hook and route params using useParams Hook
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

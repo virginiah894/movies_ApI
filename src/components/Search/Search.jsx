@@ -5,7 +5,7 @@ const Search = ({handleChange}) => {
     <div className='Search-box'>
 
 <div>
-              <input type="text" className='search'  placeholder='Search for a movie...' onChange={(e) => handleChange(e)}/>
+              <input type="text" className='search'  placeholder='Search ...' onChange={(e) => handleChange(e)}/>
              
 </div>
          
