@@ -15,6 +15,7 @@ const Movie = () => {
            const data = async () => {
 
                try {
+                //using axios to fetch data from the api
                    const response = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`);
                    console.log(response.data)
                    setMovieData(response.data.results)

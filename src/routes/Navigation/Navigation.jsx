@@ -19,6 +19,7 @@ const Navigation = () => {
               </nav>
 </div>
 
+{/* the outlet will enable us persist the navigation on all pages */}
 <Outlet/>
    </>
   )

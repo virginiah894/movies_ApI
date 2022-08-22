@@ -12,7 +12,7 @@ const Details = () => {
   //used the useParams hook to get the id of the movie or tv series attached to the end of the url we are fetching our data from
   const {dataId} = useParams()
 
-  //used the useLocation hooke to get our current route
+  //used the useLocation hook to get our current route
   const dataType = location.pathname.split("/:")[0]
 
 
@@ -21,6 +21,8 @@ const Details = () => {
     const data = async () => {
 
       try {
+
+        //using axios to fetch data from the api
         const response = await axios.get(`https://api.themoviedb.org/3/${dataType==="/tv" ?'tv': 'movie'}/${dataIdValue}?api_key=${apiKey}`);
         console.log(response.data)
         setShowMovieDetails(response.data)

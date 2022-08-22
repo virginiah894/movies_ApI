@@ -9,12 +9,16 @@ const Latest= () => {
     const [searchText, setSearchText] = useState("")
 
 
+
+    //this enables us to get our environment variables  form our .env
     const apiKey = process.env.REACT_APP_MOVIES_API
 
     useEffect(() => {
         const data = async () => {
 
             try {
+
+                //using axios to fetch data from the api
                 const response = await axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${apiKey}`);
                 console.log(response.data)
                 setAllTrending(response.data.results)
