@@ -1,0 +1,52 @@
+.pageContainer{
+
+    margin-top: 5rem;
+}
+.title{
+    text-align: center;
+}
+.container{
+    margin-top: 5rem;
+     padding-right: 100px;
+     padding-left: 100px;
+     margin-right: auto;
+     margin-left: auto;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+
+}
+
+
+.image{
+    width: 70%;
+    height: auto;
+}
+
+.details{
+    width:100%;
+    display:flex;
+    margin:2rem auto;
+    padding: 4rem auto;
+    flex-direction:column;
+}
+
+.overviewText{
+    font-size: 1.3rem;
+    margin:1rem auto;
+    padding:1rem 0
+}
+.popularity{
+    margin:1rem 0;
+}
+
+.backLink{
+    margin:1rem 0;
+    margin-left: 1rem;
+    color:inherit;
+    width:10rem;
+    text-decoration:none;
+    padding:1rem 2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+}
