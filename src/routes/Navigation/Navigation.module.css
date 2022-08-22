@@ -1,0 +1,28 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    height: 80px;
+    background-color:#032541;
+    color: #fff;
+}
+
+.logo{
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-right: 10rem;
+
+}
+
+.menu{
+
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: auto;
+    width: 50%;
+    
+   
+}
